@@ -3,7 +3,7 @@
 namespace Silex\ckan;
 
 
-use Guzzle\Common\Collection;
+// use Guzzle\Common\Collection; // cannot find how to replace this
 use GuzzleHttp\Client;
 use GuzzleHttp\Command\Guzzle\GuzzleClient;
 use GuzzleHttp\Command\Guzzle\Description;
