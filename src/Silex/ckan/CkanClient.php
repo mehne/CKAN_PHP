@@ -31,7 +31,7 @@ class CkanClient extends Client {
             'apiKey'  => ''
         );
         $required = array('baseUrl');
-        $config = Collection::fromConfig($config, $default, $required);
+        // $config = Collection::fromConfig($config, $default, $required); // no docs available who show how to update this to guzzlehttp
         $client = new self($config->get('baseUrl'), $config);
         if (!empty($config['apiKey'])){
             $client->defaultHeaders->set('X-CKAN-API-Key', $config['apiKey']);
