@@ -4,8 +4,9 @@ namespace Silex\ckan;
 
 
 use Guzzle\Common\Collection;
-use Guzzle\Service\Client;
-use Guzzle\Service\Description\ServiceDescription;
+use GuzzleHttp\Client;
+use GuzzleHttp\Command\Guzzle\GuzzleClient;
+use GuzzleHttp\Command\Guzzle\Description;
 
 class CkanClient extends Client {	
 
