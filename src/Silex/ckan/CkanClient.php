@@ -36,7 +36,7 @@ class CkanClient extends Client {
         // $client = new self($config->get('baseUrl'), $config); // replace this with V7 
         $client = new Client([
             // Base URI is used with relative requests
-            'base_uri' => $config->get('baseUrl'),
+            'base_uri' => $config['baseUrl'],
             // You can set any number of default request options.
             'timeout'  => 2.0,
         ]);
