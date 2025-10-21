@@ -172,7 +172,7 @@
             "responseClass": "CkanApiOutput",
             "parameters": {
                 "id": {
-                    "location": "postField"
+                    "location": "formParam"
                 }
             }
         },
