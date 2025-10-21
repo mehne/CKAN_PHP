@@ -2,7 +2,7 @@
 
     "name": "silex/ckan_client",
     "require": {
-        "guzzle/guzzle": "*"
+        "guzzlehttp/guzzle": "^7.10"
     },
     "minimum-stability": "dev",
     "config": {
