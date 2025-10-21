@@ -41,9 +41,10 @@ class CkanClient extends Client {
             'timeout'  => 2.0,
         ]);
 
-        if (!empty($config['apiKey'])){
-            $client->defaultHeaders->set('X-CKAN-API-Key', $config['apiKey']);
-        }
+        // as the api is public, I think there is no API key required
+        // if (!empty($config['apiKey'])){
+        //     $client->defaultHeaders->set('X-CKAN-API-Key', $config['apiKey']);
+        // }
 
         // Attach a service description to the client
         $description = ServiceDescription::factory(__DIR__ . '/service.json');
