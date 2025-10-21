@@ -48,7 +48,9 @@ class CkanClient extends Client {
 
         // Attach a service description to the client
         // $description = ServiceDescription::factory(__DIR__ . '/service.json');
-        // $client->setDescription($description); // replace that with:
+        // $client->setDescription($description);
+        // return $client;
+        // replace that with:
         $description = new Description([
                 'name' => 'Ckan',
                 'apiVersion' => '2',
@@ -506,7 +508,7 @@ class CkanClient extends Client {
         );
         $guzzleClient = new GuzzleClient($client, $description);
 
-        return $client;
+        return $guzzleClient;
     }
 
 }
